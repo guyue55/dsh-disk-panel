@@ -14,7 +14,7 @@
  * (`sidebar-panel` namespace); all colors come from theme tokens.
  */
 window.__ModuleLoader__.load({
-  id: '@local/dsh-sidebar-panel',
+  id: 'dsh-disk-panel',
   factory(require) {
     const React = require('react')
     const h = React.createElement
