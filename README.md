@@ -64,8 +64,6 @@ For a `dsh web` profile with the CLI:
 dsh plugin --profile web add dsh-disk-panel
 ```
 
-Until the npm release is published, use the tarball or GitHub form below; both
-install the same package.
 
 Replace `web` with your host's profile name, then restart the host (or let the
 desktop app reload its plugins). Other install forms:

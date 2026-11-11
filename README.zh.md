@@ -35,7 +35,6 @@ DeepSeek Harness（DSH）Web UI 的左侧栏磁盘面板：查看各卷剩余空
 dsh plugin --profile web add dsh-disk-panel
 ```
 
-npm 包发布前请用下面的 tarball 或 GitHub 方式安装，装的是同一个包。
 
 把 `web` 换成实际 profile 名，然后重启 Host（桌面端可让插件页重新加载）。其他安装方式：
 
