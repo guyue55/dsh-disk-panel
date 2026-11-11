@@ -25,7 +25,7 @@ const patch = read('cordis.patch.yml')
 assert.match(patch, /id:\s*disk-panel/)
 assert.match(patch, /name:\s*dsh-disk-panel/)
 
-for (const file of ['index.js', 'client.js', 'icon.svg', 'assets/icon-180.png', 'LICENSE', 'README.md', 'README.zh.md', 'CHANGELOG.md']) {
+for (const file of ['index.js', 'client.js', 'icon.svg', 'assets/icon-180.png', 'LICENSE', 'README.md', 'docs/README.zh.md', 'CHANGELOG.md']) {
   assert.ok(fs.existsSync(join(root, file)), `missing ${file}`)
 }
 assert.equal(pkg.exports['.'], './index.js')
