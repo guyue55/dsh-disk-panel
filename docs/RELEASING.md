@@ -46,14 +46,10 @@ publishing (OIDC)** — no long-lived npm token is stored in the repository.
    package version, runs `npm test`, and publishes with
    `npm publish --provenance --access public` using OIDC. No `NPM_TOKEN` secret
    is needed.
-5. Push a GitHub Release with the prebuilt tarball (optional but keeps the
-   market's `tarball:` fallback working). Keep the asset name version-free:
-
-   ```bash
-   npm pack --pack-destination /tmp
-   cp /tmp/dsh-disk-panel-<version>.tgz /tmp/dsh-disk-panel.tgz
-   gh release create v<version> /tmp/dsh-disk-panel.tgz
-   ```
+5. The same workflow then packs the tarball and creates the GitHub Release
+   automatically (asset name `dsh-disk-panel.tgz`, version-free, so the market's
+   `latest/download` tarball link never rots). No manual `gh release create`
+   step is needed.
 
 ## Manual fallback
 
