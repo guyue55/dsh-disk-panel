@@ -10,7 +10,7 @@ per volume, measure what each Workspace is using, move build artifacts to the
 macOS Trash with an audit log and restore, hand a scan to an agent, and get a
 low-space warning from a host-side watchdog.
 
-English | [中文](README.zh.md)
+English | [中文](docs/README.zh.md)
 
 ## Features
 

@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-11-11
+
+### Fixed
+
+- npm package page now uses the English `README.md`; the Chinese translation
+  moved to `docs/README.zh.md` so npm does not pick it as the package readme.
+
+### Added
+
+- Release workflow publishes through npm trusted publishing (GitHub Actions
+  OIDC) on `v*` tags, with a tag/version consistency check.
+
 ## [0.1.0] - 2026-11-11
 
 ### Added

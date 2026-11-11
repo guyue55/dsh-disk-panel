@@ -7,7 +7,7 @@
 
 DeepSeek Harness（DSH）Web UI 的左侧栏磁盘面板：查看各卷剩余空间、统计每个工作区的目录占用、把构建产物安全移入 macOS 废纸篓（带审计与恢复）、把扫描结果交给 Agent 分析，并在空间不足时由 Host 端看门狗提醒。
 
-[English](README.md) | 中文
+[English](../README.md) | 中文
 
 ## 功能
 

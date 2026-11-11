@@ -1,6 +1,6 @@
 {
   "name": "dsh-disk-panel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Left sidebar disk panel for the DeepSeek Harness Web UI: volume free space, per-Workspace folder sizes, moving build artifacts to the macOS Trash with an audit log and restore, agent hand-off, and a host-side low-space watchdog with OS notifications.",
   "main": "index.js",
@@ -46,7 +46,6 @@
     "icon.svg",
     "assets/icon-180.png",
     "README.md",
-    "README.zh.md",
     "LICENSE",
     "CHANGELOG.md"
   ],
