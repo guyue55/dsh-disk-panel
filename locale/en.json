@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Disk & workspaces",
+    "description": "Left sidebar disk panel: volume free space, per-Workspace folder sizes, Trash cleanup with audit log and restore, agent hand-off, and a low-space watchdog with OS notifications."
+  }
+}

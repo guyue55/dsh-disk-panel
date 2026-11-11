@@ -1,0 +1,6 @@
+# Bundle patch: inserts the plugin row. The Client half (client.js) renders the
+# left sidebar entry and the main panel; the Host half (index.js) serves the
+# disk data routes and the Host watchdog.
+- insert:
+    - id: disk-panel
+      name: dsh-disk-panel

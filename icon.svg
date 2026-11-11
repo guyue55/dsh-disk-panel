@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Disk and workspaces">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#247bbf"/>
+  <ellipse cx="32" cy="19" rx="16" ry="6" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.92"/>
+  <path d="M16 19v26c0 3.3 7.2 6 16 6s16-2.7 16-6V19" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.92"/>
+  <path d="M16 32c0 3.3 7.2 6 16 6s16-2.7 16-6" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.92"/>
+  <path d="M16 41c0 3.3 7.2 6 16 6s16-2.7 16-6" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.55"/>
+</svg>

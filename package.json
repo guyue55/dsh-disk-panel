@@ -1,0 +1,76 @@
+{
+  "name": "dsh-disk-panel",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Left sidebar disk panel for the DeepSeek Harness Web UI: volume free space, per-Workspace folder sizes, moving build artifacts to the macOS Trash with an audit log and restore, agent hand-off, and a host-side low-space watchdog with OS notifications.",
+  "license": "MIT",
+  "author": "guyue55",
+  "homepage": "https://github.com/guyue55/dsh-disk-panel#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyue55/dsh-disk-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guyue55/dsh-disk-panel/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "disk-usage",
+    "disk-cleanup",
+    "trash",
+    "sidebar",
+    "monitoring",
+    "macos"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": "^0.2.2-rc.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/manifest.test.mjs && node test/client.test.mjs"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml",
+      "platforms": [
+        "darwin",
+        "linux"
+      ]
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}
